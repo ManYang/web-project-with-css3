@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> A ZUI for an infographic</title>
+    <link rel="stylesheet" type="text/css" 
+    href="http://yui.yahooapis.com/3.5.0/build/cssreset/cssreset-min.css" data-noprefix>
+    <link rel="stylesheet" type="text/css" href="css/zui.css">
+    <script src="lib/modernizr-min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="lib/flexie.js"></script>
+      <script>
+    $(document).ready(function(){
+      $('div.panel').load('img/infographic.svg' );
+    });
+  </script>
+  </head>
+<body>
+  <section id="infographic">
+    <header>
+      <h1>a cool infographic</h1>
+    </header>
+    <article>
+      <div class="panel">
+
+  <!-- place here the svg content -->
+      </div>
+    </article>
+  </section>
+</body>
+
+</html>

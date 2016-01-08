@@ -1,0 +1,28 @@
+html, body{
+  height: 100%;
+}
+body{
+  overflow: hidden;
+font-family: sans-serif;
+}
+section{
+  display: box;
+  box-orient: horizontal;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+header{
+  width: 200px;
+  background: rgb(181, 65, 71);
+}
+article{
+  background-color: rgb(204, 204, 204);
+  background-image: 
+    repeating-linear-gradient(bottom left, rgb(204, 204, 204) 0px, 
+    rgb(204, 204, 204) 20px, 
+    rgb(210, 210, 210) 20px, rgb(210, 210, 210) 40px);
+  box-flex: 1;
+  overflow: hidden;
+  position: relative;
+}
