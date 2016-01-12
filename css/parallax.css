@@ -47,7 +47,7 @@ p small{
     
 /* z-indexes */
 .depth-a{
-  transform: translateZ(10px);
+  transform: translateZ(100px);
   z-index: 1;
 }
     
