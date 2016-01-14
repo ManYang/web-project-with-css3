@@ -1,0 +1,55 @@
+/* line 3, ../sass/gauge.scss */
+html {
+  font-size: 20px;
+}
+
+/* line 12, ../sass/gauge.scss */
+div[data-gauge] {
+  position: absolute;
+  /* width, height and rounded corners */
+  width: 200px;
+  width: 10rem;
+  height: 100px;
+  height: 5rem;
+  border-top-left-radius: 100px;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 100px;
+  border-top-right-radius: 5rem;
+  /* centering */
+  margin-top: -50px;
+  margin-top: -2.5rem;
+  margin-left: -100px;
+  margin-left: -5rem;
+  top: 50%;
+  left: 50%;
+  /* inset shadows, both in px and rem */
+  box-shadow: 0 0 2px rgba(99, 99, 99, 0.8), 0 0 2px rgba(99, 99, 99, 0.8) inset;
+  box-shadow: 0 0 0.1rem rgba(99, 99, 99, 0.8), 0 0 0.1rem rgba(99, 99, 99, 0.8) inset;
+  /* border, font size, family and color */
+  border: 1px solid #636363;
+  border: 0.05rem solid #636363;
+  color: #212121;
+  font-size: 14px;
+  font-size: 0.7rem;
+  font-family: verdana, arial, sans-serif;
+  /* min label */
+  /* max label */
+}
+/* line 40, ../sass/gauge.scss */
+div[data-gauge]:before {
+  content: attr(data-min);
+  position: absolute;
+  bottom: 4px;
+  bottom: 0.2rem;
+  left: 8px;
+  left: 0.4rem;
+}
+/* line 48, ../sass/gauge.scss */
+div[data-gauge]:after {
+  content: attr(data-max);
+  position: absolute;
+  bottom: 4px;
+  bottom: 0.2rem;
+  right: 8px;
+  right: 0.4rem;
+}

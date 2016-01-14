@@ -1,0 +1,54 @@
+$multiplier: 20px;
+
+html{
+  font-size: $multiplier;
+}
+
+@mixin px_and_rem($property, $value, $mux){
+  #{$property}: 0px + ($value * $mux);
+  #{$property}: 0rem + $value;
+}
+
+div[data-gauge]{
+  position: absolute;
+
+  /* width, height and rounded corners */
+  @include px_and_rem(width, 10, $multiplier);
+  @include px_and_rem(height, 5, $multiplier);
+  @include px_and_rem(border-top-left-radius, 5, $multiplier);
+  @include px_and_rem(border-top-right-radius, 5, $multiplier);
+  
+  /* centering */
+  @include px_and_rem(margin-top, -2.5, $multiplier);
+  @include px_and_rem(margin-left, -5,  $multiplier);
+  top: 50%;
+  left: 50%;
+
+  /* inset shadows, both in px and rem */
+box-shadow: 0 0 #{0.1 * $multiplier} rgba(99,99,99,0.8), 0 0 #{0.1 * $multiplier} rgba(99,99,99,0.8) inset;
+  box-shadow: 0 0 0.1rem rgba(99,99,99,0.8), 0 0 0.1rem rgba(99,99,99,0.8) inset;
+
+  /* border, font size, family and color */
+  border: #{0.05 * $multiplier} solid rgb(99,99,99);	
+  border: 0.05rem solid rgb(99,99,99);
+  
+  color: rgb(33,33,33);
+  @include px_and_rem(font-size, 0.7, $multiplier);
+  font-family: verdana, arial, sans-serif;
+
+  /* min label */
+  &:before{
+    content: attr(data-min);
+    position: absolute;
+    @include px_and_rem(bottom, 0.2, $multiplier);
+    @include px_and_rem(left, 0.4, $multiplier);
+  }
+  
+  /* max label */
+  &:after{
+    content: attr(data-max);
+    position: absolute;
+    @include px_and_rem(bottom, 0.2, $multiplier);
+    @include px_and_rem(right, 0.4, $multiplier);
+  }
+}
