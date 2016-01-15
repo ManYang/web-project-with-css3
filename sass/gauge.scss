@@ -1,3 +1,7 @@
+@import "gaugePartial.scss";
+@import "compass/css3/images";
+
+
 $multiplier: 20px;
 
 html{
@@ -11,6 +15,13 @@ html{
 
 div[data-gauge]{
   position: absolute;
+
+  @include gauge-background(11,
+  radial-gradient(50% 100%, circle, rgb(255,255,255), rgb(230,230,230)),
+  cover,
+  center center
+);
+
 
   /* width, height and rounded corners */
   @include px_and_rem(width, 10, $multiplier);
@@ -50,5 +61,22 @@ box-shadow: 0 0 #{0.1 * $multiplier} rgba(99,99,99,0.8), 0 0 #{0.1 * $multiplier
     position: absolute;
     @include px_and_rem(bottom, 0.2, $multiplier);
     @include px_and_rem(right, 0.4, $multiplier);
+  }
+
+    div[data-arrow]{
+    position: absolute;
+    @include px_and_rem(width, 2, $multiplier);
+    @include px_and_rem(height, 2, $multiplier);
+    @include px_and_rem(border-radius, 5, $multiplier);
+    @include px_and_rem(bottom, -1, $multiplier);
+    left: 50%;
+    @include px_and_rem(margin-left, -1, $multiplier);
+   box-sizing: border-box;
+
+    border: #{0.05 * $multiplier} solid rgb(99,99,99);  
+    border: 0.05rem solid rgb(99,99,99);
+    background: #fcfcfc;
+
+    
   }
 }
