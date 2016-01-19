@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Chivo);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -69,7 +70,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: -ms-flexbox;
   display: flex;
   /* temporary property only for this step */
-  border: 1px solid black;
+  ／／border: 1px solid black;
 }
 *[data-bar-chart] *[data-bar] {
   -webkit-box-flex: 1;
@@ -595,4 +596,32 @@ input:checked.series4[type='checkbox'] ~ *[data-bar-chart] .series4 {
 
 *[data-bar-chart] .series4 {
   background-color: #2bff00;
+}
+
+.value {
+  -moz-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.this_bar_chart {
+  -moz-transform: rotate(90deg) translate(10px, -10px);
+  -ms-transform: rotate(90deg) translate(10px, -10px);
+  -webkit-transform: rotate(90deg) translate(10px, -10px);
+  transform: rotate(90deg) translate(10px, -10px);
+  width: 500px;
+  height: 500px;
+}
+.this_bar_chart *[data-bar]:before {
+  -moz-transform: rotate(-90deg) translate(-7px, 0px);
+  -ms-transform: rotate(-90deg) translate(-7px, 0px);
+  -webkit-transform: rotate(-90deg) translate(-7px, 0px);
+  transform: rotate(-90deg) translate(-7px, 0px);
+}
+.this_bar_chart *[data-bar] .value:after {
+  -moz-transform: rotate(-90deg) translate(5px, 0px);
+  -ms-transform: rotate(-90deg) translate(5px, 0px);
+  -webkit-transform: rotate(-90deg) translate(5px, 0px);
+  transform: rotate(-90deg) translate(5px, 0px);
 }
