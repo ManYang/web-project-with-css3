@@ -9,17 +9,17 @@ There are multiple components, like signup form, barchart, dynamic gallery, para
 [Click me](https://manyang.github.io/web-project-with-css3/signup.html)
 
 ###bar chart
-![alt text](screenshots/bar-chart.png "Sing Up")
+![alt text](screenshots/bar-chart.png "Bar chart")
 [Click me](https://manyang.github.io/web-project-with-css3/barchart/barchart.html)
 
 ##dynamic gallery
-![alt text](screenshots/gallery.png "Sing Up")
+![alt text](screenshots/gallery.png "gallery")
 [Click me](https://manyang.github.io/web-project-with-css3/image-gallery.html)
 
 ###parallax
-![alt text](screenshots/parallax.png "Sing Up")
+![alt text](screenshots/parallax.png "parallax")
 [Click me](https://manyang.github.io/web-project-with-css3/parallax.html)
 
 ###video mask
-![alt text](screenshots/video-mask.png "Sing Up")
+![alt text](screenshots/video-mask.png "video mask")
 [Click me](https://manyang.github.io/web-project-with-css3/mask-video.html)
