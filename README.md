@@ -5,7 +5,7 @@ This is a series of exercise from the book 'Designing Next Generation Web Projec
 There are multiple components, like signup form, barchart, dynamic gallery, parallax, video mask, etc. All are implement by pure css3.
 
 ###sing up form
-![alt text](screenshots/singup.png "Sing Up")
+![alt text](screenshots/signup.png "Sing Up")
 [Click me](https://manyang.github.io/web-project-with-css3/signup.html)
 
 ###bar chart
